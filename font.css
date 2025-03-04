@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Pragmasevka';
+  src: url('./fonts/pragmasevka-regular.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmasevka';
+  src: url('./fonts/pragmasevka-bold.woff2')
+    format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmasevka';
+  src: url('./fonts/pragmasevka-bolditalic.woff2')
+    format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}

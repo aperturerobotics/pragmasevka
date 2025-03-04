@@ -1,0 +1,43 @@
+{
+  "name": "@aptre/pragmasevka",
+  "version": "1.0.0",
+  "description": "Self-host the Pragmasevka font.",
+  "author": "Renzhi Li (aka. Belleve Invis, belleve@typeof.net)",
+  "license": "OFL-1.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aperturerobotics/pragmasevka.git"
+  },
+  "homepage": "https://github.com/aperturerobotics/pragmasevka",
+  "keywords": [
+    "font",
+    "font family",
+    "pragmasevka",
+    "pragmatapro",
+    "iosevka",
+    "monospace",
+    "css",
+    "web",
+    "typeface"
+  ],
+  "scripts": {
+    "release:version": "npm version patch -m \"release: v%s\" --no-git-tag-version",
+    "release:commit": "git reset && git add package.json && git commit -s -m \"release: v$npm_package_version\" && git tag v$npm_package_version",
+    "release:publish": "git push && git push --tags && npm run build && npm publish",
+    "release": "npm run release:version && npm run release:commit"
+  },
+  "main": "font.css",
+  "exports": {
+    ".": {
+      "default": "./font.css"
+    },
+    "./font.css": "./font.css",
+    "./fonts/*": "./fonts/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "fonts/",
+    "font.css",
+    "LICENSE.md"
+  ]
+}
