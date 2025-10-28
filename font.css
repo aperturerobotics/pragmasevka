@@ -1,23 +1,43 @@
 @font-face {
   font-family: 'Pragmasevka';
-  src: url('./fonts/pragmasevka-regular.woff2')
-    format('woff2');
-  font-weight: normal;
+  src: url('./fonts/pragmasevka-regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
 }
 
 @font-face {
   font-family: 'Pragmasevka';
-  src: url('./fonts/pragmasevka-bold.woff2')
-    format('woff2');
-  font-weight: bold;
+  src: url('./fonts/pragmasevka-bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
+  font-display: swap;
+  font-stretch: normal;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
 }
 
 @font-face {
   font-family: 'Pragmasevka';
-  src: url('./fonts/pragmasevka-bolditalic.woff2')
-    format('woff2');
-  font-weight: bold;
+  src: url('./fonts/pragmasevka-italic.woff2') format('woff2');
+  font-weight: 400;
   font-style: italic;
+  font-display: swap;
+  font-stretch: normal;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+}
+
+@font-face {
+  font-family: 'Pragmasevka';
+  src: url('./fonts/pragmasevka-bolditalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+  font-stretch: normal;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
 }
