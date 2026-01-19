@@ -21,10 +21,12 @@
     "typeface"
   ],
   "scripts": {
+    "release": "npm run release:version && npm run release:commit",
+    "release:minor": "npm run release:version:minor && npm run release:commit",
     "release:version": "npm version patch -m \"release: v%s\" --no-git-tag-version",
-    "release:commit": "git reset && git add package.json && git commit -s -m \"release: v$npm_package_version\" && git tag v$npm_package_version",
-    "release:publish": "git push && git push --tags && npm publish",
-    "release": "npm run release:version && npm run release:commit"
+    "release:version:minor": "npm version minor -m \"release: v%s\" --no-git-tag-version",
+    "release:commit": "git reset && git add package.json && git commit -s -m \"release: v$(node -p \"require('./package.json').version\")\" && git tag v$(node -p \"require('./package.json').version\")",
+    "release:publish": "git push && git push --tags"
   },
   "main": "font.css",
   "exports": {
